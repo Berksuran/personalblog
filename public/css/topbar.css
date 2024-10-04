@@ -1,0 +1,100 @@
+.topbar{
+    width: 100;
+    height: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.topbar .wrapper{
+    width: 100%;
+    max-width: 1366px;
+    display: flex;
+}
+
+.topbar .left, .topbar .right{
+
+    flex: 3;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: white;
+}
+
+.topbar .left i{
+    font-size: 1.3rem;
+}
+
+.topbar .center{
+    flex: 6;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: white;
+}
+
+.topbar .right span img{
+    width: 50px;
+    height: 50px;
+    border-radius: 600px;
+}
+
+.topbar .right .searchEngine{
+    width: 60%;
+    height: 100;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+.topbar .right .searchEngine i{
+    position: absolute;
+    right: 0px;
+    background-color: orange;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    cursor: pointer;
+
+}
+
+.topbar .right .searchEngine input{
+    width: 100%;
+    margin-right: 20px;
+    height: 25px;
+    border-radius: 5px;
+    padding: 0px 0px 0px 5px;
+    opacity: 0;
+    transition: all 0.5s;
+     
+}
+
+.topbar .right .searchEngine{
+    width: 0px;
+    transition: all 0.5s;
+}
+.topbar .right .searchEngine.active {
+    width: 60%;
+}
+
+.topbar .right .searchEngine.active input{
+    opacity: 1;
+}
+
+/* Scroll animation */
+
+.topbar{
+    opacity: 0;
+    transition :all 0.5s ;
+}
+
+.topbar.active{
+    opacity: 1;
+
+}
+
